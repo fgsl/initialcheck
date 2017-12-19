@@ -1,0 +1,15 @@
+{
+    "name": "Initial Check",
+    "description": "App for customize initial check",
+    "type": "project",
+    "license": "AGPL",
+    "authors": [
+        {
+            "name": "Flávio Gomes da Silva Lisboa"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    }
+}

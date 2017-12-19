@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>initialcheck</id>
+    <name>Initial Check</name>
+    <summary>App for customize initial check</summary>
+    <description><![CDATA[This app allows to include additional checks to initialization of Nextcloud. First check is limited to version of PHP. For environments that have specific requirements the imediate solution is override versioncheck.php. But it is dangerous because an update of Nextcloud can discard changes. With InitialCheck app you can change and add check in initialization without to lose them.]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="flavio.lisboa@fgsl.eti.br" homepage="http://www.fgsl.eti.br">Flávio Gomes da Silva Lisboa</author>
+    <namespace>InitialCheck</namespace>
+    <category>customization</category>
+    <bugs>https://github.com/fgsl/initialcheck/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="12" max-version="12"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Initial Check</name>
+            <route>initialcheck.page.index</route>
+        </navigation>
+    </navigations>
+</info>
