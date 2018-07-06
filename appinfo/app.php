@@ -27,7 +27,7 @@
 $checkPath = realpath(__DIR__ . '/../check');
 $checks = scandir($checkPath);
 foreach($checks as $check){
-	if (substr($check,0,6) == 'check_' ){
+	if (substr($check,0,6) == 'check_' && substr($check,-3,3) == 'php'){
 		include $checkPath . DIRECTORY_SEPARATOR . $check;
 	}
 }
